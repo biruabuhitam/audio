@@ -1,1 +1,50 @@
-# audio
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">     
+<script src="https://sweetalert2.all.min.js"></script>
+<style>
+.button {
+    position:center;
+    top: 50%;
+    left: 50%;
+    background: rgb(212, 121, 121);
+    color: rgb(206, 27, 27);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    padding: 0 0.75em;
+  }
+  </style>
+</head>
+<body> 
+    <div class="button">
+<button id="footer-buttons" class="btn btn-warning btn-sm third"><span class="fa fa-music"></span>klik untuk menampilkan</button>
+<audio id="audio" controls tabindex="0" loop>
+    <source type="audio/mp3" src="https://www.smule.com/recording/rossa-ayat-ayat-cinta-ayat-ayat-cinta/517427504_4083796610?channel=Copy-Link">
+    Sorry, your browser does not support HTML5 audio. </audio> </div>
+<script>
+/* Alert - patrocinio da musica  */ 
+document.querySelector(".third").addEventListener("click", function() {
+  swal({
+    title: "Dea Vienna AR",
+    html:
+    'Thanks for watching and add me--->' +
+    '<a target="_blank" href="https://www.smule.com/Deavienna">SmuleID|2021</a> ' + '<a class="btn btn-success btn-xs" style="font-family:inherit;font-size:13px;color:#fff;border:none;" onClick="play()">Play/Pause</a> ',
+    
+    imageUrl: "https://c.tenor.com/9kCcGeA3u3IAAAAM/hai-gaes-smule.gif",
+    imageWidth: 550,
+    imageHeight: 225,
+    imageAlt: "Eagle Image",
+    showCancelButton: false,
+    confirmButtonText: 
+    '<i class="fa fa-thumbs-up"></i> Great!',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i>',
+  cancelButtonAriaLabel: 'Thumbs down',
+  });
+});
+</script>
+</body>
+</html>
