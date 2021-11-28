@@ -5,10 +5,12 @@
 <script src="sweetalert2.all.min.js"></script>
 <style>
 .button {
-    position:center;
+    position:bottom;
+    display: inline-block;
+    cursor: pointer;
     top: 50%;
     left: 50%;
-    background: rgb(212, 121, 121);
+    background: rgb(228, 150, 5);
     color: rgb(206, 27, 27);
     border: 1px solid black;
     border-radius: 0.5em;
@@ -20,7 +22,7 @@
 <body> 
     <div class="button">
 <button id="footer-buttons" class="btn btn-warning btn-sm third"><span class="fa fa-music"></span>klik untuk menampilkan</button>
-<audio id="audio" controls tabindex="0" loop>
+<audio id="audio" controls autoplay="0" loop>
     <source type="audio/mp3" src="Dina%20Deavienna%20AR%20-%20Kisah%20Cinta.mp3">
     Sorry, your browser does not support HTML5 audio. </audio> </div>
 <script>
@@ -38,7 +40,7 @@ document.querySelector(".third").addEventListener("click", function() {
     imageAlt: "Eagle Image",
     showCancelButton: false,
     confirmButtonText: 
-    '<i class="fa fa-thumbs-up"></i> Great!',
+    '<i class="fa fa-thumbs-up"></i> Great!Thanks',
   confirmButtonAriaLabel: 'Thumbs up, great!',
   cancelButtonText:
     '<i class="fa fa-thumbs-down"></i>',
